@@ -32,8 +32,6 @@ ul {
     padding: 0px 15px;
     box-sizing: border-box;
     background-color:#1A1A1A;
-
-
 }
 
 /*                                                    1й блок-------------------------------------------------------*/
@@ -870,7 +868,6 @@ ul {
 .social_wrap i {
     padding-left: 25px;
     color: #FFFFFF;
-
 }
 
 .social_networks li{
@@ -881,7 +878,5 @@ ul {
 }
 .social_networks i{
     float: left;
-
-
 }
 
