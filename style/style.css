@@ -1,0 +1,887 @@
+ul { 
+    list-style: none; 
+}
+.clearfix {
+    clear:both;
+}
+.fl {
+    float:left;
+}
+/* картинку обтекаем справа*/
+.fr{
+    float:right
+}
+.of {
+    overflow: auto;
+}
+/*максимальная ширина сайта*/
+.container-big {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    background: #252525;
+    opacity: 0.75;
+    border-radius: 6px;
+}
+
+/*максимальная ширина сайта*/
+.container-main {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-color:#1A1A1A;
+
+
+}
+
+/*                                                    1й блок-------------------------------------------------------*/
+.size_ls{
+    max-width: 270px;
+}
+/*позиционирование логотипа и надписи + отступ от левого края*/
+.position_ls{
+    margin-left: 165px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.size_rs {
+    max-width: 840px;
+}
+/*позиционирование меню + отступ от правого края*/
+.postion_rs {
+    margin-right: 165px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-family: 'Alegreya' ;
+    font-size: 24px ;
+    line-height: 14px ;
+    color: #34C759;
+    /*выравниваю положение тексата оносительно лого*/
+    margin-left: 5px;
+    margin-top: 35px;
+}
+.navigation-wrap li {
+    float:right;
+}
+/* для ссылок в меню навигации увеличиваю область срабатывания*/
+.navigation-wrap li a {
+    padding:10px 10px;
+}
+/*выравниваю по правому краю + .шрифты*/
+.step {
+    font-family: 'Alegreya SC' ;
+    font-size: 14px;
+    line-height: 14px ;
+    color: #FFFFFF ;
+    margin-left: 340px;
+}
+/*стиль меню навигации*/
+.step a{
+    font-family: 'Alegreya SC' ;
+    font-size: 14px;
+    line-height: 14px ;
+    color: #FFFFFF ;
+}
+
+/*-------------------------------------------------------------------- блок 2------------------------------------------------------ */
+/*Размер блока*/
+.container-main2 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-image: url(../image/background/Frame1.jpg);
+    background-size: cover;
+    overflow: auto;
+}
+
+.delivery {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*расположение заголовка блока2 + шрифт заголовка блока 2*/
+.delivery h1 {
+    width: 100%;
+    text-align: center;
+    max-width: 1100px;
+    /* max-height: 165px; */
+    font-family: 'Alegreya';
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 30px
+}
+
+.add_inf{
+    padding-bottom: 75px;
+}
+.blok {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 165px;
+
+}
+.blok p {
+    font-family: 'Alegreya' ;
+    font-size: 16px;
+    line-height: 30px ;
+    color: #FFFFFF;
+}
+.blok span {
+    font-family: 'Montserrat' ;
+    font-size: 14px;
+    line-height: 18px ;
+    color: #FFFFFF 75%;
+}
+
+/*-------------------------------------------------------------------- блок 3------------------------------------------------------ */
+
+.container-main3 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background: #1A1A1A;;
+    overflow: auto;
+}
+
+.lunch {
+    padding-top: 40px;
+    max-width: 1200px;
+    max-height: 590px;
+    margin-left: 120px;
+    margin-bottom: 90px;
+    background: linear-gradient(180deg, #1A1A1A 0%, #2C2C2C 100%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.list_of_dishes {
+    margin-left: 205px;
+    max-width: 380px;
+    text-align: left;
+    position: relative;
+}
+
+/*Стили*/
+.lunch h1 {
+
+    font-family: 'Montserrat' ;
+    font-size: 36px;
+    line-height: 24px ;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    color: #34C759;
+    text-align: center;
+}
+.list_of_dishes b {
+    font-family: 'Montserrat' ;
+    font-size: 14px;
+    line-height: 17px ;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.ft{
+    font-family: 'Alegreya' ;
+    font-size: 18px;
+    line-height: 24px ;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+}
+.list_of_dishes p {
+    font-family: 'Alegreya' ;
+    font-size: 13px;
+    line-height: 18px ;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;/*разрыв между строками*/
+    color: #FFFFFF;
+}
+
+/* у меня по макету полоса идет шириной 0рх, сделал 12 чтобы увидеть её цвет. почемуто он не отображаеться, хотя применился*/
+.list_of_dishes hr{
+    color: #34C759;
+    padding-top: 1px;
+}
+/*через псевдоєлемент как на уроке, не получилось сделать зеленую линию*/
+.list_of_dishes p::before{
+    content: "";
+    background: #34C759;
+    height: 2px;
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+}
+/*картинка*/
+.food1 {
+    width: 380px;
+    height: 320px;
+    margin-right: 205px;
+    margin-bottom: 30px;
+}
+
+.round_btn1 {
+    background-color: #252525;
+    border: 3px solid #34C759;
+    border-radius: 20px;
+    height: 34px;
+    width: 100%;
+    max-width: 160px;
+    margin-left: 535px;
+    /*padding: 8px 30px;  /*вроде бі размер с макета, го визуально она оггромная*/
+    margin-bottom: 40px;
+}
+/*увеличиваю область кликабельности ссылки*/
+.round_btn1 a{
+    padding:15px 48px;
+}
+/*позиционируем картинку и текст*/
+.round_btn1 img{
+    padding-top: 13px;
+}
+
+
+/*-------------------------------------------------------------------- Ссылки переходы----------------------------------------------- */
+/*размеры блока*/
+.container-main4 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-color:#1A1A1A;
+}
+
+/*размеры блока*/
+.cross-over{
+    max-width: 100%;
+    width: 1200px;
+    height: 260px;  /*если я убираю ко у меня пропадает вісота секции и вложенного в нее блока*/
+    margin-left: 285px;
+    margin-right: 320px;
+}
+/*размещение*/
+.blok2 {
+    text-align: center;
+    margin-right: 270px;
+}
+
+/* круглая рамка с картинкой*/
+.round {
+    background-color: #252525;
+    border: 3px solid #34C759;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+/*увеличиваю область кликабельности ссылки*/
+.cross-over a{
+    padding:90px 35px;
+}
+/*позиционируем картинку и текст*/
+.cross-over img{
+    padding-top: 30px;
+}
+/*в данном случае применил h3 вместо р , и-за того, что валидатор попросил использовать в секции h*/
+.cross-over h3{
+    padding-top: 40px;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+/*-------------------------------------------------------------------- 4й блок------------------------------------------------------- */
+.container-main5 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-image: url(../image/background/pizza.jpg);
+}
+/*размеры секции*/
+.make_your_own_pizza {
+    width: 100%;
+    max-width: 1200px;
+    overflow: auto;
+}
+/*размеры блоков*/
+.make_your_own_pizza h1{
+    max-width: 280px;
+    max-height: 90px;
+}
+.make_your_own_pizza p {
+    max-width: 480px;
+    max-height: 60px;
+}
+/*выравниваю блок по правую сторону*/
+
+/*Стили*/
+.make_your_own_pizza h1{
+    font-family: 'Montserrat' ;
+    font-size: 36px;
+    line-height: 44px ;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #34C759;
+}
+.make_your_own_pizza p {
+    font-family: 'Montserrat' ;
+    font-size: 24px;
+    line-height: 29px ;
+    font-style: normal;
+    margin-bottom: 60px;
+    color: #FFFFFF;
+}
+
+.round_btn2 {
+    background-color: #252525;
+    border: 3px solid #34C759;
+    border-radius: 20px;
+    height: 34px;
+    width: 100%;
+    max-width: 160px;
+    /*padding: 8px 30px;  /*вроде бі размер с макета, го визуально она оггромная*/
+    margin-bottom: 140px;
+}
+
+/*увеличиваю область кликабельности ссылки*/
+.round_btn2 a{
+    margin:15px 48px;
+}
+/*позиционируем картинку и текст*/
+.round_btn2 img{
+    padding-top: 13px;
+}
+
+/*-------------------------------------------------------------------- 5й блок------------------------------------------------------- */
+.container-main6 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+}
+.event_calendar{
+    width: 100%;
+    max-width: 1200px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.event_calendar h2{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    max-width: 480px ;
+    max-height: 45px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    color: #FFFFFF;
+}
+.left_parts {
+    padding-left: 120px;
+    background-color:#1A1A1A;
+}
+.right_parts {
+    padding-right: 120px;
+    max-width: 790px;
+}
+.all_event {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    margin-bottom: 30px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    border-radius: 6px;
+}
+.all_event2 {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    margin-bottom: 30px;
+    background-image: url(../image/background/food2.jpg);
+}
+
+.all_event p{
+    color: #FFFFFF;
+}
+.all_event a{
+    color: #FFFFFF;
+}
+.all_event time{
+    color: #B3B3B3;
+}
+
+.all_event2 p{
+    color: #FFFFFF;
+}
+.all_event2 a{
+    color: #FFFFFF;
+}
+.all_event2 time{
+    color: #B3B3B3;
+}
+
+.all_event3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #34C759;
+    padding-bottom: 90px;
+    max-width: 240px;
+    max-height: 25px;
+    margin-left: 190px;
+}
+.all_event3 a{
+    color: #34C759;
+}
+.all_event3 img {       /* не уверен что правильно спозикионировал стрелки*/
+    padding-left: 12px;
+    margin-right: -17px;
+}
+/*-------------------------------------------------------------------- 6й блок------------------------------------------------------- */
+
+.container-main7 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    overflow: auto;
+}
+.worker {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.worker div {
+    float:left
+}
+.worker img {
+    float:left
+}
+.worker h2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 560px;
+    max-height: 45px;
+    margin-bottom: 60px;
+    padding-left: 300px;
+    color: #D9D9D9;
+}
+
+.workers_logo {
+    max-width: 240px;
+    max-height: 70px;
+    margin-left: 135px;
+}
+.workers_logo p {
+    margin-left: 85px;
+    margin-top: 5px;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.workers_logo span {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+/*-------------------------------------------------------------------- 7й блок------------------------------------------------------- */
+
+.deserts {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 80px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.deserts h2{
+    text-align: center;
+    margin-left: 375px;
+    max-width: 420px;
+    max-height: 45px;
+    margin-bottom: 75px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #D9D9D9;
+}
+
+.deserts h3 {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.product_card {
+    max-width: 380px;
+    max-height: 440px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+
+}
+.product_card span {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #B3B3B3;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.product_card p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: #32D74B;
+}
+
+.round_btn3 {
+    background-color:#34C759;
+    border-radius: 20px;
+    height: 32px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+/*увеличиваю область кликабельности ссылки*/
+.round_btn3 a{
+    padding:10px 16px;
+}
+/*позиционируем картинку и текст*/
+.round_btn3 img{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+    padding-top: 13px;
+}
+
+/*-------------------------------------------------------------------- 7й блок------------------------------------------------------- */
+
+.mention {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.mention h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #D9D9D9;
+}
+
+.mention div{
+    max-width: 365px;
+    max-height: 240px;
+    margin-right: 30px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.mention p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.75);
+    padding-right: 30px ;
+    padding-bottom: 38px;
+    padding-left: 20px;
+}
+
+.rating {
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+
+.user {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    padding-top: 25px;
+}
+
+/*-------------------------------------------------------------------- 7й блок------------------------------------------------------- */
+
+.container-main10 {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    overflow: auto;
+    position: relative;
+}
+.contacts{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 80px;
+}
+.contacts h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 85px;
+    color: #D9D9D9;
+}
+/*.contacts div{
+    width: 100%;
+    max-width: 200px;
+    padding-left: 100px;
+}*/
+
+/*контент левой части*/
+.left_parts2 {
+    max-width: 200px;
+    padding-left: 100px;
+    display: inline-block;
+    
+}
+.left_parts2 a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.left_parts2 i{
+    color: #FFFFFF;
+}
+/*контент правой части*/
+.right_contacts {
+    right: 50px;
+    top: 0px;
+    max-width: 690px;
+    position: relative;
+    left: 500px;
+    top: -105px;
+    right: 200;
+}
+/*надпись в рамке*/
+.right_contacts a {
+    margin-left: 10px;
+    margin-top: 10pxpx;
+}
+/*cтили кнопок*/
+.round_btn4 {
+    float: right;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    background-color: #252525;
+    border: 1px solid #34C759;
+    border-radius: 20px;
+    height: 32px;
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 30px;
+}
+.round_btn5 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    background-color: #252525;
+    border: 1px solid #34C759;
+    border-radius: 20px;
+    height: 32px;
+    width: 100%;
+    max-width: 330px;
+    height: 32px;
+    margin-bottom: 30px
+}
+
+.round_btn6 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    background-color:#252525;
+    border: 1px solid #34C759;
+    border-radius: 20px;
+    height: 32px;
+    width: 100%;
+    max-width: 680px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.round_btn7 {
+    position: relative;
+    left: 520px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #252525;
+    border: 1px solid #34C759;
+    border-radius: 20px;
+    max-width: 160px;
+    height: 35px;
+    display: block;
+}
+
+
+/*-------------------------------------------------------------------- 8й блок------------------------------------------------------- */
+.container-main_last {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-color: #252525
+}
+
+.fot_nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.fot_nav h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #34C759;
+        /*выравниваю положение тексата оносительно лого*/
+    margin-left: 5px;
+    margin-top: 14px;
+    padding-top: 50px;
+}
+
+.fot_nav div{
+    padding-left: 500px;
+    padding-top: 50px;
+}
+
+.fot_nav a{
+    padding-left: 20px;
+}
+.navigation-wrap2 li {
+    float: left;
+}
+.navigation-wrap2 {
+    margin-left: 40px;
+    padding-left: 400px;
+    padding-bottom: 15px;
+
+}
+
+.navigation-wrap2 a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.social_wrap {
+    padding-left: 535px;
+    padding-bottom: 30px;
+}
+.social_wrap i {
+    padding-left: 25px;
+    color: #FFFFFF;
+
+}
+
+.social_networks li{
+    float: left;
+}
+.social_networks a{
+    float: left;
+}
+.social_networks i{
+    float: left;
+
+
+}
+
