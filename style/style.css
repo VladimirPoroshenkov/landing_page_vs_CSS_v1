@@ -1,6 +1,15 @@
 ul { 
     list-style: none; 
 }
+a{
+    text-decoration: none;
+}
+li a:hover{
+    color: #34C759;
+}
+body {
+    position: relative;
+}
 .clearfix {
     clear:both;
 }
@@ -11,193 +20,322 @@ ul {
 .fr{
     float:right
 }
-.of {
+.overflow {
     overflow: auto;
 }
-/*максимальная ширина сайта*/
-.container-big {
+.pos_rel{
+    position: relative;
+}
+
+.container-main {
     width: 100%;
     max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
-    background: #252525;
-    opacity: 0.75;
-    border-radius: 6px;
 }
 
-/*максимальная ширина сайта*/
+ul { 
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+}
+li a:hover{
+    color: #34C759;
+}
+body {
+    position: relative;
+}
+.clearfix {
+    clear:both;
+}
+.fl {
+    float:left;
+}
+/* картинку обтекаем справа*/
+.fr{
+    float:right
+}
+.overflow {
+    overflow: auto;
+}
+.pos_rel{
+    position: relative;
+}
+
 .container-main {
+    width: 100%;
     max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
-    box-sizing: border-box;
-    background-color:#1A1A1A;
 }
+/*                                                    блок1-------------------------------------------------------*/
+.big_block{
+    background-image: url(../image/background/Frame1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+.big_block background-image::after{
+    content:"";
+    background-color: #1A1A1A;
+    background-position: bottom;
 
-/*                                                    1й блок-------------------------------------------------------*/
-.size_ls{
-    max-width: 270px;
 }
-/*позиционирование логотипа и надписи + отступ от левого края*/
-.position_ls{
+.container-main1 {
+    width: 100%;
+    max-width: 1440px;
+    overflow: auto;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.header-main1{
+    width: 100%;
+    background: #252525; /*цвет фона взят с макета*/
+    opacity: 0.75;
+}
+.head_position{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.left_side {
     margin-left: 165px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-.size_rs {
-    max-width: 840px;
-}
-/*позиционирование меню + отступ от правого края*/
-.postion_rs {
-    margin-right: 165px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.header_text {
+.left_side span {
     text-transform: uppercase;
     font-family: 'Alegreya' ;
     font-size: 24px ;
     line-height: 14px ;
-    color: #34C759;
-    /*выравниваю положение тексата оносительно лого*/
     margin-left: 5px;
-    margin-top: 35px;
+    color: #34C759;
+}
+.left_side span:hover{
+    color: #FFFFFF;
+}
+
+.right_side {
+    margin-left: 397px;
 }
 .navigation-wrap li {
-    float:right;
+    float:left;
 }
-/* для ссылок в меню навигации увеличиваю область срабатывания*/
+/* для ссылок в меню навигации увеличиваю область срабатывания + стиль*/
 .navigation-wrap li a {
-    padding:10px 10px;
-}
-/*выравниваю по правому краю + .шрифты*/
-.step {
-    font-family: 'Alegreya SC' ;
-    font-size: 14px;
-    line-height: 14px ;
-    color: #FFFFFF ;
-    margin-left: 340px;
-}
-/*стиль меню навигации*/
-.step a{
+    padding:20px 10px;
     font-family: 'Alegreya SC' ;
     font-size: 14px;
     line-height: 14px ;
     color: #FFFFFF ;
 }
 
-/*-------------------------------------------------------------------- блок 2------------------------------------------------------ */
+.navigation-wrap li a:hover{
+    color: #34C759;
+}
+
+.navigation_blok {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*----------------------------------------------блок 2-(Доставка свежей еды)-------------------------------- */
 /*Размер блока*/
 .container-main2 {
-    max-width: 1440px;
-    margin: 0px auto;
-    padding: 0px 15px;
+    margin: 0 auto;
+    padding: 45px 0px 75px;/* отступ контента от 1го блока сверху и от 3го блока снизу как по макету*/
     box-sizing: border-box;
-    background-image: url(../image/background/Frame1.jpg);
-    background-size: cover;
     overflow: auto;
+    text-align: center;
+    background: linear-gradient(355.26deg, rgba(19, 16, 15, 0.74) 43.78%, rgba(31, 26, 25, 0) 95.28%);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .delivery {
-    max-width: 1200px;
     margin: 0 auto;
-
+    position: relative;  /* ограничиваю вылет боковых кнопок*/
+    max-width: 1440px;
+}
+.top_wrap {
+    max-width: 1100px;
+    margin-left: 170px;
+    margin-right: 170px;
+    padding-bottom: 25px;
+    padding-top: 45px;
 }
 
-/*расположение заголовка блока2 + шрифт заголовка блока 2*/
 .delivery h1 {
     width: 100%;
     text-align: center;
-    max-width: 1100px;
-    /* max-height: 165px; */
+    max-width: 1035px; /*чтобы текст встал по макету*/
     font-family: 'Alegreya';
     font-size: 72px;
     line-height: 72px;
-    margin-bottom: 30px
+    margin-bottom: 30px;   /*нужен ли он???*/
+    margin-left: 30px; /*выравниваю заголовок по центру его контейнера согласно макета */
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    margin: o auto;       /*дополнительно указываю. почему он не срабатывае от родительского елемента????*/
 }
-
-.add_inf{
-    padding-bottom: 75px;
+/* позиционирование блока согласно отступов от кра'в сайта*/
+.bottom_wrap{
+    margin-left: 297px;
+    margin-right: 200px;
 }
-.blok {
+.blok1 {
+    width: 100%;
+    max-width: 170px;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 165px;
+    margin-left: 16px;
+}
+.blok2 {
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+    margin-left: 170px;
+}
+.blok3 {
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+    margin-left: 165px;
+    position: relative;
+}
+
+.blok3 a {
+    left: 0;
+    padding-top: 35px;
+    padding-left: 29px;
+    position: absolute;
 
 }
-.blok p {
+
+.blok_style p {
     font-family: 'Alegreya' ;
     font-size: 16px;
     line-height: 30px ;
     color: #FFFFFF;
+    margin-bottom: -4px;
 }
-.blok span {
+.blok_style a {
+    font-family: 'Alegreya' ;
+    font-size: 16px;
+    line-height: 30px ;
+    color: #FFFFFF;
+    margin-bottom: -4px;
+}
+
+.blok_style span {
     font-family: 'Montserrat' ;
     font-size: 14px;
     line-height: 18px ;
-    color: #FFFFFF 75%;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+/*для картинки нужно сделать отступ от текста 13px, у меня почемуто по умолчанию отступ от картинки до тeкста огромный, пришлось прописать отрицательный margin.  Почему так ????*/
+.blok_style img{
+    margin-bottom: -12px;
+    max-width: 26px;
+    max-height: 26px;
 }
 
-/*-------------------------------------------------------------------- блок 3------------------------------------------------------ */
+/*--------------------------------------------------боковые кнопки-------------------------------------------------------------*/
+
+.side_icon {
+    width: 48px;
+    height: 48px;
+    background-image: url(../image/logo/Button/background_sidemenu.png);
+}
+.side_menu i {
+    width: 12px;
+    height: 12px;
+    background: #7D2C1B;
+    color:white;
+}
+.side_menu {
+    margin-right: 2px;
+    margin-top: -210px; /*поднял вверх*/
+    position: relative;
+}
+.side_menu a {
+    padding-top: 29px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.side_menu img {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 28px;
+    height: 29px;
+} 
+.number_pic img{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 44px;
+    left: 33px;
+}
+
+/*---------------------------------------------------------------- блок 3-(Бизнес ланч)-------------------------------------- */
 
 .container-main3 {
-    max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
-    background: #1A1A1A;;
-    overflow: auto;
+    overflow: auto;   /*если уберу, то пропадает нижний отступ блока*/
+    /* --background: #1A1A1A; */
+    max-width: 1440px;
 }
 
 .lunch {
     padding-top: 40px;
+    padding-bottom: 40px;
     max-width: 1200px;
-    max-height: 590px;
     margin-left: 120px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
     background: linear-gradient(180deg, #1A1A1A 0%, #2C2C2C 100%);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
     border-radius: 6px;
-}
-
-.list_of_dishes {
-    margin-left: 205px;
-    max-width: 380px;
-    text-align: left;
+    margin-top: 76px;
+    /* z-index: 100; */
     position: relative;
 }
 
-/*Стили*/
-.lunch h1 {
-
-    font-family: 'Montserrat' ;
+.lunch-header{
+    text-align: center;     /* если я указываю width:100% max-Width: 284px, то свойство align:center, отменяеться и текст прыгает на начало строки*/
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
     font-size: 36px;
-    line-height: 24px ;
+    line-height: 44px;
     text-transform: uppercase;
-    font-style: normal;
-    font-weight: 600;
     color: #34C759;
+}
+
+
+.order_time {
     text-align: center;
-}
-.list_of_dishes b {
-    font-family: 'Montserrat' ;
-    font-size: 14px;
-    line-height: 17px ;
-    font-style: normal;
-    font-weight: 600;
-    color: #FFFFFF;
-}
-.ft{
-    font-family: 'Alegreya' ;
-    font-size: 18px;
-    line-height: 24px ;
+    margin-bottom: 40px;
+    font-family: 'Alegreya';
     font-style: normal;
     font-weight: 500;
-    text-align: center;
-    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D9D9D9;
 }
+
+.conteiner_dishes{
+    margin: 0 auto;
+}
+.list_of_dishes {
+    max-width: 380px;
+    text-align: left;
+    margin-left: 205px;
+}
+
+
 .list_of_dishes p {
     font-family: 'Alegreya' ;
     font-size: 13px;
@@ -207,27 +345,80 @@ ul {
     margin-bottom: 8px;/*разрыв между строками*/
     color: #FFFFFF;
 }
-
-/* у меня по макету полоса идет шириной 0рх, сделал 12 чтобы увидеть её цвет. почемуто он не отображаеться, хотя применился*/
-.list_of_dishes hr{
-    color: #34C759;
-    padding-top: 1px;
+/* --------------делаю подчеркивания*---------------*//*сделал для каждого пункта отдельно, попітался сделать сразу всем, но линии выстраивались лесенкой, */
+.item_list1 {
+    position: relative;
 }
-/*через псевдоєлемент как на уроке, не получилось сделать зеленую линию*/
-.list_of_dishes p::before{
-    content: "";
+
+.item_list1 p::after{
+    content: '';
     background: #34C759;
-    height: 2px;
+    height: 1px;
     width: 380px;
     position: absolute;
-    bottom: 0;
+    bottom: -12px;
+    left: 0;
 }
-/*картинка*/
+.item_list2 {
+    position: relative;
+    padding-top: 12px;
+}
+
+.item_list2 p::after{
+    content: '';
+    background: #32D74B;
+    height: 1px;
+    width: 380px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+.item_list3 {
+    position: relative;
+    padding-top: 12px;
+}
+
+.item_list3 p::after{
+    content: '';
+    background: #32D74B;
+    height: 1px;
+    width: 380px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+
+.item_list4 {
+    position: relative;
+    padding-top: 12px;
+}
+
+.item_list4 p::after{
+    content: '';
+    background: #32D74B;
+    height: 1px;
+    width: 380px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+/*---------------------------------------------------*/
+
+
+.list_of_dishes b {
+    font-family: 'Montserrat' ;
+    font-size: 14px;
+    line-height: 17px ;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+}
 .food1 {
     width: 380px;
-    height: 320px;
+    height: 307px;
+    margin-bottom: 28px;
     margin-right: 205px;
-    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 .round_btn1 {
@@ -238,41 +429,61 @@ ul {
     width: 100%;
     max-width: 160px;
     margin-left: 535px;
-    /*padding: 8px 30px;  /*вроде бі размер с макета, го визуально она оггромная*/
-    margin-bottom: 40px;
+    margin: 0 auto;
 }
 /*увеличиваю область кликабельности ссылки*/
 .round_btn1 a{
     padding:15px 48px;
+    border-radius: 20px;
+}
+.round_btn1:hover{
+    border: 3px solid;
+    background-color:#FFFFFF;
 }
 /*позиционируем картинку и текст*/
 .round_btn1 img{
     padding-top: 13px;
 }
 
-
-/*-------------------------------------------------------------------- Ссылки переходы----------------------------------------------- */
+/*----------------------------------------------------------блок4-(кнопки ссылки)---------------------------------- */
+/*если смотреть через панель инструментов то виден пробел между блоками*/
 /*размеры блока*/
 .container-main4 {
-    max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
     background-color:#1A1A1A;
+    margin-top: -429px;
+    padding-bottom: 1px;
 }
 
 /*размеры блока*/
 .cross-over{
-    max-width: 100%;
-    width: 1200px;
-    height: 260px;  /*если я убираю ко у меня пропадает вісота секции и вложенного в нее блока*/
-    margin-left: 285px;
-    margin-right: 320px;
+    width: 100%;
+    max-width: 1440px;
+    height: 279px;  /*если я убираю то у меня пропадает высота секции и вложенного в нее блока*/
+    overflow: auto;
+    padding-top: 447px;
+    margin: 0 auto;
+}
+.container_round_block{
+    padding-top: 40px;
 }
 /*размещение*/
-.blok2 {
+.blok4 {
     text-align: center;
-    margin-right: 270px;
+    margin-left: 318px;
+    width: 170px;
+}
+.blok5 {
+    text-align: center;
+    margin-left: 220px;
+    width: 170px;
+}
+
+.blok6 {
+    text-align: center;
+    margin-left: 220px;
+    width: 170px;
 }
 
 /* круглая рамка с картинкой*/
@@ -285,7 +496,7 @@ ul {
 }
 /*увеличиваю область кликабельности ссылки*/
 .cross-over a{
-    padding:90px 35px;
+    padding: 90px 32px 145px;
 }
 /*позиционируем картинку и текст*/
 .cross-over img{
@@ -300,21 +511,31 @@ ul {
     font-size: 24px;
     line-height: 33px;
     color: #FFFFFF;
+    margin-left: -40px; /*чтобы выровнять текст под иконками*/
+    margin-bottom: 62px;
+}
+.co_title{
+    width: 167px;
+    height: 70px;
+    padding-bottom: 62px;
 }
 
-/*-------------------------------------------------------------------- 4й блок------------------------------------------------------- */
+/*----------------------------------------------------------блок5 (Собери свою пиццу------------------------------------------ */
+
 .container-main5 {
-    max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
     background-image: url(../image/background/pizza.jpg);
+    background-size: 100%;
+    background-repeat: round;
 }
 /*размеры секции*/
 .make_your_own_pizza {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     overflow: auto;
+
+    margin: 0 auto;
 }
 /*размеры блоков*/
 .make_your_own_pizza h1{
@@ -325,20 +546,21 @@ ul {
     max-width: 480px;
     max-height: 60px;
 }
-/*выравниваю блок по правую сторону*/
-
 /*Стили*/
 .make_your_own_pizza h1{
-    font-family: 'Montserrat' ;
+    font-family: 'Montserrat';
     font-size: 36px;
-    line-height: 44px ;
+    line-height: 44px;
     font-style: normal;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 40px;
+    padding-top: 180px;
+    padding-right: 400px;
     color: #34C759;
 }
+
 .make_your_own_pizza p {
     font-family: 'Montserrat' ;
     font-size: 24px;
@@ -358,7 +580,10 @@ ul {
     /*padding: 8px 30px;  /*вроде бі размер с макета, го визуально она оггромная*/
     margin-bottom: 140px;
 }
-
+.round_btn2:hover {
+border: 3px solid;
+background-color:#FFFFFF;
+}
 /*увеличиваю область кликабельности ссылки*/
 .round_btn2 a{
     margin:15px 48px;
@@ -368,17 +593,102 @@ ul {
     padding-top: 13px;
 }
 
-/*-------------------------------------------------------------------- 5й блок------------------------------------------------------- */
+/*----------------------------------------------------------стрелки------------------------------------------ */
+.button_circle_right {      /*позиционирую в блоке правую круглую кнопку*/
+    float: right;
+    margin-right: 89px;
+    margin-top: -370px;
+}
+.button_circle_right a{
+    margin: 0 auto;
+    padding-top: 52px;
+}
+.button_circle_right:hover{
+    border: 3px solid  #34C759;
+}
+
+.button_circle_left{
+        margin-top: 267px;
+        margin-left: 167px;
+        width: 60px;
+        height: 60px;
+        /* float: left; */
+}
+.button_circle_left a{
+    margin: 0 auto;
+    padding-top: 52px;
+}
+.button_circle_left:hover{
+    border: 3px solid  #34C759;
+
+}
+
+.make_your_own_pizza i {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #34C759;
+}
+/*---------------------------------------------------------ссылки кружки--------------------------------------*/
+.position_little-circle{
+    position: relative;
+    top: 200px;
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-bottom: -5px;
+}
+
+.little-circle1 {
+    position: absolute;
+    border: 1px solid #34C759;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    bottom: 0;
+}
+.little-circle2 {
+    position: absolute;
+    border: 1px solid #34C759;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    bottom: 0;
+}
+.little-circle3 {
+    position: absolute;
+    border: 1px solid #34C759;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-left: 80px;
+    bottom: 0;
+}
+.position_little-circle a{
+    margin: 0 auto;
+    padding-left: 17px;
+}
+.little-circle1:hover{
+    background-color: #34C759;
+}
+.little-circle2:hover{
+    background-color: #34C759;
+}
+.little-circle3:hover{
+    background-color: #34C759;
+}
+
+/*----------------------------------------------------------блок6 (Календарь)------------------------------------------ */
+
 .container-main6 {
-    max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
     background-color: #1A1A1A;
 }
 .event_calendar{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     overflow: auto;
     margin: 0 auto;
 }
@@ -390,54 +700,111 @@ ul {
     font-size: 36px;
     line-height: 44px;
     text-align: center;
-    max-width: 480px ;
-    max-height: 45px;
+    /* max-width: 480px; */
+    /* max-height: 45px; */
     margin: 0 auto;
     padding-top: 80px;
-    padding-bottom: 90px;
+    /* padding-bottom: 20px; */
     color: #FFFFFF;
 }
+/*позиционирую линию под кнопкой*/
+.calendar_header {
+    position: relative;
+    /* margin-left: 440px; */
+}
+.calendar_header h2::after {
+    content: '';
+    background: #32D74B;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -13px;
+    left: 696px;
+}
+
 .left_parts {
-    padding-left: 120px;
-    background-color:#1A1A1A;
+    margin-left: 120px;
+    margin-top: 89px;background-color:#1A1A1A;
+    width: 380px;
+    height: 416px;
+}
+.left_parts img {   /*не могу подключить картинку*/
+    width: 380px;
+    height: 416px;
+    border-radius: 10px;
 }
 .right_parts {
-    padding-right: 120px;
-    max-width: 790px;
+    margin-right: 120px;
+    margin-top: 89px;
+    /* max-width: 750px; */
 }
 .all_event {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 55px;
     margin-bottom: 30px;
+    margin-left: -46px;
     background: #252525;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     border-radius: 6px;
+    /* width: 100%; */
+    /* max-width: 790px; */
 }
 .all_event2 {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 55px;
     margin-bottom: 30px;
+    margin-left: -44px;
     background-image: url(../image/background/food2.jpg);
+    background-repeat: round;
+    /* width: 100%; */
+    /* max-width: 790px; */
+}
+.small_link{
+    padding-top: 20px;
+    float: right;
+    margin-right: 30px;
 }
 
 .all_event p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
     color: #FFFFFF;
 }
 .all_event a{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     color: #FFFFFF;
+    padding-right: 13px;
 }
 .all_event time{
     color: #B3B3B3;
 }
 
 .all_event2 p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
     color: #FFFFFF;
 }
 .all_event2 a{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     color: #FFFFFF;
+    padding-right: 13px;
 }
 .all_event2 time{
     color: #B3B3B3;
@@ -453,28 +820,25 @@ ul {
     padding-bottom: 90px;
     max-width: 240px;
     max-height: 25px;
-    margin-left: 190px;
+    margin-left: 545px;
 }
 .all_event3 a{
     color: #34C759;
 }
 .all_event3 img {       /* не уверен что правильно спозикионировал стрелки*/
     padding-left: 12px;
-    margin-right: -17px;
 }
-/*-------------------------------------------------------------------- 6й блок------------------------------------------------------- */
 
+/*----------------------------------------------------------блок7 (лучшие повара)------------------------------------------ */
 .container-main7 {
-    max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
     background-color: #1A1A1A;
     overflow: auto;
 }
 .worker {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
@@ -483,6 +847,20 @@ ul {
 }
 .worker img {
     float:left
+}
+/*позиционирую линию под кнопкой*/
+.worker_header {
+    position: relative;
+    margin-left: 440px;
+}
+.worker_header h2::after {
+    content: '';
+    background: #32D74B;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -13px;
+    left: 235px;
 }
 .worker h2 {
     text-align: center;
@@ -494,14 +872,31 @@ ul {
     max-width: 560px;
     max-height: 45px;
     margin-bottom: 60px;
-    padding-left: 300px;
     color: #D9D9D9;
+    margin: 0 auto;
 }
 
-.workers_logo {
+.logo{
+    padding-top: 60px;
+}
+
+.position_workers_logo1 {
     max-width: 240px;
     max-height: 70px;
-    margin-left: 135px;
+    margin-left: 213px;
+    padding-bottom: 90px;
+}
+.position_workers_logo2 {
+    max-width: 240px;
+    max-height: 70px;
+    margin-left: 150px;
+    padding-bottom: 90px;
+}
+.position_workers_logo3 {
+    max-width: 240px;
+    max-height: 70px;
+    margin-left: 160px;
+    padding-bottom: 90px;
 }
 .workers_logo p {
     margin-left: 85px;
@@ -521,20 +916,28 @@ ul {
     line-height: 16px;
     color:rgba(255, 255, 255, 0.5);
 }
+/*----------------------------------------------------------блок8 (Популярные десерты)--------------------------------------- */
 
-/*-------------------------------------------------------------------- 7й блок------------------------------------------------------- */
-
+.container-main8 {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    overflow: auto;
+}
 .deserts {
     width: 100%;
-    max-width: 1200px;
-    padding-top: 80px;
-    margin: 0 auto;
+    max-width: 1440px;
     overflow: auto;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 88px;
+    box-sizing: border-box;
+    margin-bottom: 40px; /*по макету 80px-40px paddinga между карточками*/
 }
 
 .deserts h2{
     text-align: center;
-    margin-left: 375px;
+    margin-left: 375px;  /*значение не из макета т.к. е блока отступы*/
     max-width: 420px;
     max-height: 45px;
     margin-bottom: 75px;
@@ -545,6 +948,19 @@ ul {
     line-height: 44px;
     color: #D9D9D9;
 }
+/*линия под заголовком*/
+.deserts_header{
+    position: relative;
+}
+.deserts_header h2::after {
+    content: '';
+    background: #32D74B;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -13px;
+    left: 552px;
+}
 
 .deserts h3 {
     font-family: 'Alegreya';
@@ -552,18 +968,21 @@ ul {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     color: #FFFFFF;
+    margin: 0 auto;
 }
 
 .product_card {
     max-width: 380px;
-    max-height: 440px;
-    margin-right: 10px;
-    margin-left: 10px;
+    max-height: 437px;
+    margin-right: 30px;
     margin-bottom: 40px;
-
+    background: #252525;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    border-radius: 6px;
 }
 .product_card span {
 
@@ -592,7 +1011,7 @@ ul {
 .round_btn3 {
     background-color:#34C759;
     border-radius: 20px;
-    height: 32px;
+    height: 32px; /*размер взят с макета, но если брать значения отступов надписи внутри кнопки, они слишком большие*/
     width: 100%;
     max-width: 100px;
     margin-top: 25px;
@@ -613,16 +1032,30 @@ ul {
     text-align: center;
     text-transform: uppercase;
     color: #252525;
-    padding-top: 13px;
+    padding-top: 13px;   /*значения проставил вручную*/
+    padding-left: 4px;
+}
+.round_btn3:hover{
+    background-color: #FFFFFF;
 }
 
-/*-------------------------------------------------------------------- 7й блок------------------------------------------------------- */
-
+/*----------------------------------------------------------блок9 (Отзывы)--------------------------------------- */
+.container-main9 {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    overflow: auto;
+}
 .mention {
     width: 100%;
-    max-width: 1200px;
-    padding-top: 80px;
+    max-width: 1440px;
     margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 74px;
+    overflow: auto;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+    position: relative;
 }
 
 .mention h2{
@@ -633,11 +1066,25 @@ ul {
     line-height: 44px;
     text-align: center;
     margin-bottom: 60px;
+    margin-top: 0;
     color: #D9D9D9;
 }
+/*линия под заголовком*/
+.mention_header{
+    position: relative;
+}
+.mention_header h2::after {     /*на странице отображаеться как 0*40px, не могу убрать*/
+    content: '';
+    background: #32D74B;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -13px;
+    left: 582px;
+}
 
-.mention div{
-    max-width: 365px;
+.mention_card div{
+    max-width: 380px;
     max-height: 240px;
     margin-right: 30px;
     background: #252525;
@@ -645,7 +1092,7 @@ ul {
     border-radius: 6px;
 }
 
-.mention p {
+.mention_card p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -668,48 +1115,61 @@ ul {
     margin-bottom: 12px;
     padding-top: 25px;
 }
+.vl {
+    border-left: 4px solid  #303030;
+    height: 100px;
+    position: absolute;
+    margin-top: -157px;
+    margin-left: 354px;
+    padding-right: 20px;
+}
 
-/*-------------------------------------------------------------------- 7й блок------------------------------------------------------- */
+/*----------------------------------------------------------блок10 (контакты)--------------------------------------- */
 
 .container-main10 {
-    max-width: 1440px;
     margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
     background-color: #1A1A1A;
     overflow: auto;
-    position: relative;
+    /* position: relative; */
 }
 .contacts{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     overflow: auto;
-    padding-bottom: 80px;
+    padding-bottom: 80px;   /*как-то он неправильно работает*/
 }
-.contacts h2{
+.contacts h2 {
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
-    margin-top: 80px;
     margin-bottom: 85px;
     color: #D9D9D9;
 }
-/*.contacts div{
-    width: 100%;
-    max-width: 200px;
-    padding-left: 100px;
-}*/
+/*линия под заголовком*/
+.contacts_header{
+    position: relative;
+}
+.contacts_header h2::after{
+    content: '';
+    background: #32D74B;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -13px;
+    left: 690px;
+}
 
 /*контент левой части*/
 .left_parts2 {
     max-width: 200px;
-    padding-left: 100px;
+    margin-left: 326px;
     display: inline-block;
-    
 }
 .left_parts2 a{
     font-family: 'Montserrat';
@@ -725,17 +1185,20 @@ ul {
 /*контент правой части*/
 .right_contacts {
     right: 50px;
-    top: 0px;
     max-width: 690px;
     position: relative;
-    left: 500px;
+    left: 482px;
     top: -105px;
-    right: 200;
+    margin-left: 155px;
+    overflow: auto;
 }
 /*надпись в рамке*/
-.right_contacts a {
-    margin-left: 10px;
-    margin-top: 10pxpx;
+.right_contacts a {   /*нужна ли тут вообще ссылка???*/
+    padding-left: 21px;
+}
+.right_contacts img {
+    padding-left: 20px;
+    padding-top: 9px;
 }
 /*cтили кнопок*/
 .round_btn4 {
@@ -750,8 +1213,9 @@ ul {
     border-radius: 20px;
     height: 32px;
     width: 100%;
-    max-width: 330px;
+    max-width: 328px;
     margin-bottom: 30px;
+    margin-right: 9px;
 }
 .round_btn5 {
     font-family: 'Open Sans';
@@ -762,9 +1226,8 @@ ul {
     background-color: #252525;
     border: 1px solid #34C759;
     border-radius: 20px;
-    height: 32px;
     width: 100%;
-    max-width: 330px;
+    max-width: 328px;
     height: 32px;
     margin-bottom: 30px
 }
@@ -780,7 +1243,7 @@ ul {
     border-radius: 20px;
     height: 32px;
     width: 100%;
-    max-width: 680px;
+    max-width: 682px;
     height: 80px;
     margin-bottom: 30px;
 }
@@ -792,35 +1255,58 @@ ul {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     background-color: #252525;
     border: 1px solid #34C759;
     border-radius: 20px;
     max-width: 160px;
     height: 35px;
-    display: block;
-}
-
-
-/*-------------------------------------------------------------------- 8й блок------------------------------------------------------- */
-.container-main_last {
-    max-width: 1440px;
-    margin: 0px auto;
-    padding: 0px 15px;
     box-sizing: border-box;
-    background-color: #252525
 }
+.round_btn7 img {
+    padding-left: 28px;
+    padding-top: 10px;
+}
+.round_btn7 a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.round_btn7:hover{
+    background-color:#FFFFFF
+}
+
+/*----------------------------------------------------------блок11 (Footer)--------------------------------------- */
+
+.container-main11 {
+    margin: 0px auto;
+    box-sizing: border-box;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 .fot_nav{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     overflow: auto;
     background-color: #252525;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.fot_nav h2{
+.footer-logo{
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 54px;
+    margin-left: 596px;
+    padding-bottom: 20px;
+}
+
+
+.fot_nav span{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -831,25 +1317,30 @@ ul {
         /*выравниваю положение тексата оносительно лого*/
     margin-left: 5px;
     margin-top: 14px;
-    padding-top: 50px;
+    max-width: 268px;
+    max-height: 14px;
+}
+.fot_nav img{
+    max-width: 31px;
+    max-height: 20px;
+}
+.fot_nav hr{
+    color: #737373;
+    background-color: #737373;
+    border: #737373 solid 1px;
 }
 
-.fot_nav div{
-    padding-left: 500px;
-    padding-top: 50px;
-}
 
 .fot_nav a{
-    padding-left: 20px;
+    margin-left: 40px; /*отступы взяты по макету, */
 }
 .navigation-wrap2 li {
     float: left;
 }
 .navigation-wrap2 {
-    margin-left: 40px;
-    padding-left: 400px;
-    padding-bottom: 15px;
-
+    padding-left: 461px;
+    padding-right: 419px; /*по макету размер 472px, но тогда не влазит на 1 строку*/
+    margin-bottom: 18px;
 }
 
 .navigation-wrap2 a{
@@ -862,21 +1353,35 @@ ul {
 }
 
 .social_wrap {
-    padding-left: 535px;
-    padding-bottom: 30px;
+    padding-left: 644px;
+    padding-right: 470px; /*по макету размер 655px, но тогда не влазит на 1 строку!!!*/
+    padding-top: 30px;
+    padding-bottom: 28px;
+    margin: 0 auto;
 }
 .social_wrap i {
-    padding-left: 25px;
+    /* padding-left: 25px; */
     color: #FFFFFF;
 }
 
+.social_networks{
+    margin-right: 25px;
+}
 .social_networks li{
     float: left;
+    padding-left: 25px;
 }
-.social_networks a{
+.social_networks a{ /*ссылка имеет 0 высоту, не могу исправить*/
     float: left;
+    width: 20px;
+    height: 20px;
+    padding-left: 0px;
+    margin-left: -24px;
+    padding-right: 25px;
+    /* padding-right: 20px; */
 }
 .social_networks i{
     float: left;
+    width: 20px;
+    height: 20px;
 }
-

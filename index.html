@@ -21,64 +21,100 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/97fb681309.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <div class="container-big of">
-        <div class=" fl size_ls position_ls">
-            <a href="#">
-            <img src="./image/logo/Logo.png" alt="Logo"></a>
-        </div>
-        <p class="header_text fl size_main">Територия вкуса</p>
-        <nav class="navigation-wrap fl size_rs postion_rs">
-            <ul class="step fl">
-                <li><a href="./pages/pizza.html" target="_blank">Пицца</a></li>
-                <li><a href="./pages/rolles.html" target="_blank">Ролы</a></li>
-                <li><a href="./pages/lunch.html" target="_blank">Бизнес-ланчи</a></li>
-                <li><a href="./pages/snacks.html" target="_blank">Закуски</a></li>
-                <li><a href="./pages/deserts.html" target="_blank">Десерты</a></li>
-                <li><a href="./pages/beverages.html" target="_blank">Напитки</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<main>
-    <section class="container-main2" >
-        <div class="delivery">
-            <h1>Доставка свежей и горячей еды <br>в течении 40 минут</h1>
-            <div class="add_inf of">
-                <div class="blok fl">
-                    <img src="./image/logo/delivery/ic_watch_later.png" alt="часы">
-                    <p>с10:00 до 17:00 ,<br><span>Доставка</span></p>
-                </div>
-                <div class="blok fl">
-                    <img src="./image/logo/delivery/ic_near_me.png" alt="Адрес ближайшего кафе">
-                    <p> ул.Горького 126<br><span>Ближайшее кафе</span></p>
-                </div>
-                <div class="blok fl">
-                    <img src="./image/logo/delivery/ic_call.png" alt="Телефон доставки">
-                    <p> 8-800-100-20-20<br><span>Заказ по телефону</span></p>
-                </div>
+<header class="head_position">
+    <!------------------------------------------------------------блок1-------------------------------------------------------------->
+    <div class="header-main1">
+        <div class="container-main1 overflow">
+            <div class="left_side fl ">
+                    <a href="#">
+                    <img src="./image/logo/Logo.png" alt="Територия вкуса"><span>Територя вкуса</span></a>
+            </div>
+            <div class="right_side fl ">
+                    <nav class="navigation_blok">
+                        <ul class="fr navigation-wrap ">
+                            <li><a href="./pages/pizza.html" target="_blank">Пицца</a></li>
+                            <li><a href="./pages/rolles.html" target="_blank">Ролы</a></li>
+                            <li><a href="./pages/lunch.html" target="_blank">Бизнес-ланчи</a></li>
+                            <li><a href="./pages/snacks.html" target="_blank">Закуски</a></li>
+                            <li><a href="./pages/deserts.html" target="_blank">Десерты</a></li>
+                            <li><a href="./pages/beverages.html" target="_blank">Напитки</a></li>
+                        </ul>
+                    </nav>
             </div>
         </div>
-    </section>
-    <section class="container-main3">
-        <div class="lunch">
-            <h1>Бизнес-ланч</h1>
-            <p class="ft">заказ до 15:00</p>
+    </div>
+    
+    
+</header>
+
+
+<!------------------------------------------------------------блок2------------------------------------------------------------->
+<div class="big_block">
+    <div class="container-main2">
+    <div class="delivery">
+        <div class="top_wrap"><h1>Доставка свежей и горячей еды в течении 40 минут</h1></div>
+        <div class="bottom_wrap overflow">
+            <div class="blok1 blok_style fl">
+                <img src="./image/logo/delivery/ic_watch_later.png" alt="часы">
+                <p>Доставка с10:00 до 17:00</p><span>Время работы</span>
+            </div>
+            <div class="blok2 blok_style fl">
+                <img src="./image/logo/delivery/ic_near_me.png" alt="Адрес ближайшего кафе">
+                <p> ул.Горького 126</p><span>Ближайшее кафе</span>
+            </div>
+            <div class="blok3 blok_style fl">
+                <a href="tel:+88001002020">8-800-100-20-20</a>
+                <img src="./image/logo/delivery/ic_call.png" alt="Телефон доставки">
+                <p> 8-800-100-20-20</p><span>Заказ по телефону</span>
+            </div>
+        </div>
+        <!--блок боковых кнопок---> 
+        <div class="side_menu fr">
+            <div class="side_icon">
+                <a href="#">
+                <img src="./image/logo/Button/sidemenu1.png" alt="лого пользователя">
+                </a>
+            </div>
+            <div class="side_icon">
+                <a href="#">
+                <img src="./image/logo/Button/sidemenu2.png" alt="лого списка заказа">
+                </a>
+            </div>
+            <div class="side_icon">
+                <a href="#">
+                <img src="./image/logo/Button/sidemenu3.png" alt="лого избранного">
+                </a>
+            </div>
+            <div class="number_pic">
+                <img src="./image/logo/Button/colvo.svg">
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+<!---------------------------------------------------------блок3------------------------------------------------------------>
+    <div class="container-main3">
+    <div class="lunch">
+        <h1 class="lunch-header">Бизнес-ланч</h1>
+        <p class="order_time">заказ до 15:00</p>
+        <div class="conteiner_dishes">
             <div class="list_of_dishes fl">
-                <div>
-                    <p><b>На Первое:</b></p>
+                <div class="item_list1">
+                    <b>На Первое:</b>
                     <p>Cуп-лапша,борщ,солянка,сырный-крем-суп с грибами</p>
                 </div>
-                <div>
-                    <p><b>На Второе:</b></p>
-                    <p>Синная отбивная,паста с баклажанами,стейк из семги,курица по тайски,запеченый картофель,ризотто</p>
+                <div class="item_list2">
+                    <b>На Второе:</b>
+                    <p>Свинная отбивная,паста с баклажанами,стейк из семги,курица по тайски,запеченый картофель,ризотто</p>
                 </div>
-                <div>
-                    <p><b>Салаты:</b></p>
+                <div class="item_list3">
+                    <b>Салаты:</b>
                     <p>Цезарь,весенний,ананасовый</p>
                 </div>
-                <div>
-                    <p><b>Напитки:</b></p>
+                <div class="item_list4">
+                    <b>Напитки:</b>
                     <p>Кофе,чай-фруктовый,морс клюквенный,компот яблочно-вишнёвый</p>
                 </div>
             </div>
@@ -89,177 +125,235 @@
                     </a>
                 </div>
         </div>
-    </section>
-    <section class="container-main4">
+    </div>
+    </div>
+</div>
+    <div class="container-main4">
         <div class="cross-over ">
-            <div class="fl blok2 round">
-                <a href="./pages/familyholidays.html">
-                <img src="./image/circles/Vector.png" alt="Картинка с тортиком">
-                </a>
-                <h3>Семейные праздники</h3>
-            </div>
-            <div class="fl blok2 round">
-                <a href="./pages/catering.html">
-                <img src="./image/circles/Vector11.png" alt="Картинка домика">
-                </a>
-                <h3>Кейтеринг</h3>
-            </div>
-            <div class="fl blok2 round">
-                <a href="./pages/corporatedishes.html">
-                <img src="./image/circles/Vector1.png" alt="Картинки с чемоданом">
-                </a>
-                <h3>Корпоративные блюда</h3>
-            </div>
+                <div class="fl blok4 round">
+                    <a href="./pages/familyholidays.html">
+                    <img src="./image/circles/Vector.png" alt="Картинка с тортиком">
+                    </a>
+                    <div class="co_title"><h3>Семейные праздники</h3></div>
+                </div>
+                <div class="fl blok5 round">
+                    <a href="./pages/catering.html">
+                    <img src="./image/circles/Vector11.png" alt="Картинка домика">
+                    </a>
+                    <div class="co_title"><h3>Кейтеринг</h3></div>
+                </div>
+                <div   div class="fl blok6 round">
+                    <a href="./pages/corporatedishes.html">
+                    <img src="./image/circles/Vector1.png" alt="Картинки с чемоданом">
+                    </a>
+                    <div class="co_title"><h3>Корпоративные обеды</h3></div>
+                </div>
         </div>
-    </section>
-    <section class="container-main5">
-        <div class="make_your_own_pizza ">
-            <div class="fr">
-                <h1>Соберите свою пиццу</h1>
-                <p>Мы приготовили для Вас пиццу с вашими любимыми ингридиентами</p>
-                <div class="round_btn2">
+    </div> 
+
+<!------------------------------------------------------------блок5-------------------------------------------------------------->
+<section class="container-main5">
+    <div class="make_your_own_pizza ">
+        <div class="fr">
+            <h1>Соберите свою пиццу</h1>
+            <p>Мы приготовили для Вас пиццу с вашими любимыми ингридиентами</p>
+            <div class="round_btn2">
                 <a href="#">
                 <img src="./image/logo/Button/SMALL.png" alt="заказать">
                 </a>
-                </div>
+            </div>
+            <div class="button_circle_right">
+                <a href="#">
+                <img src="./image/logo/Button/circle_right.png" alt="следущая картинка">
+                </a>
             </div>
         </div>
-    </section>
-    <section class="container-main6">
-        <div class="event_calendar">
+        <div class="button_circle_left">
+            <a href="#">
+            <img src="./image/logo/Button/circle_left.png" alt="предыдущая картинка">
+            </a>
+        </div>
+        <div class="position_little-circle">
+            <div class="little-circle1 fl">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="little-circle2 fl">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="little-circle3 fl">
+            <a href="#">
+                <img src="" alt="">
+            </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------------------------------блок6--(календарь)----------------------------------------------->
+<section class="container-main6">
+    <div class="event_calendar">
+        <div class="calendar_header">
             <h2>Календарь мероприятий</h2>
-            <div class="left_parts fl">
-                <img scr="./image/background/calendar.png" alt="календарь"></img>
+        </div>
+        <div class="left_parts fl">
+            <img src="./image/background/calendar.jpg" alt="заказать">
+        </div>
+        <div class="right_parts fr">
+            <div class="all_event">
+                <p><time class="time">10:00</time></p>
+                <a href="/pages/Events.html" target="_blank">Детский мастер-класс</a>
+                <p>Будет проводиться детский мастер-класс</p>
+                <div class="small_link">
+                    <a href="#">
+                    <img src="./image/logo/view.png" alt="заказать">
+                    </a>
+                    <a href="#">
+                    <img src="./image/logo/coments.png" alt="заказать">
+                    </a>
+                </div>
             </div>
-            <div class="right_parts fr">
-                <div class="all_event">
-                    <time class="time">10:00</time>
-                    <a href="/Pages/Events.html" target="_blank">Детский мастер-класс</a>
-                    <p>25.06.2022 Будет проводиться детский мастер-класс</p>
+            <div class=all_event2>
+                <p><time>19:00</time></p>
+                <a href="/pages/Events.html" target="_blank">Джазовый концерт</a>
+                <p>состоиться Джазовый концерт</p>
+                <div class="small_link">
+                    <a href="#">
+                    <img src="./image/logo/view.png" alt="заказать">
+                    </a>
+                    <a href="#">
+                    <img src="./image/logo/coments.png" alt="заказать">
+                    </a>
                 </div>
-                <div class=all_event2>
-                    <time>19:00</time>
-                    <a href="/Pages/Events.html" target="_blank">Джазовый концерт</a>
-                    <p>30.06.2022 состоиться Джазовый концерт</p>
-                </div>
-                <div class="all_event3">
-                    <a href="/Pages/Events.html" target="_blank">Все мероприятия</a>
-                    <img src="./image/logo/Button/strelka_m.png" alt=Стрелка></img> 
-                    <img src="./image/logo/Button/strelka_m.png" alt=Стрелка></img> 
-                </div>
+            </div>
+            <div class="all_event3">
+                <a href="/pages/Events.html" target="_blank">Все мероприятия</a>
+                <img src="./image/logo/Button/Group 121.svg" alt=Стрелка></img> 
+
             </div>
         </div>
-    </section>
-    <section class="container-main7">
-        <div class="worker">
+    </div>
+</section>
+<!------------------------------------------------------------блок7 (лучшие повара)-------------------------------------->
+<section class="container-main7">
+    <div class="worker">
+        <div class="worker_header">
             <h2>Лучшие повара этого месяца</h2>
-            <div class="workers_logo">
+        </div>
+        <div class="logo">
+            <div class="workers_logo position_workers_logo1">
                 <img src="./image/profile/Grigoriy_Kovalev.png" alt="Фото Григория Ковалёва"></img>
                 <p>Григорий Ковалев <br><span>Шеф холодного цеха<span</p>
             </div>
-            <div class="workers_logo">
+            <div class="workers_logo position_workers_logo2">
                 <img src="./image/profile/Nataliya_Orehova.png" alt="Фото Натальи Ореховой"></img>
                 <p>Наталья Орехова <br><span>Су-шеф горячего цеха</span></p>
             </div>
-            <div class="workers_logo">
+            <div class="workers_logo position_workers_logo3">
                 <img src="./image/profile/Oleg_gilber.png" alt="Фото Олега Гилберта"></img>
                 <p >Олег Гилберт <br><span>Шеф-кондитер</span></p>
             </div>
         </div>
-    </section>
-    <section class="container-main">
-        <div class="deserts">
+    </div>
+</section>
+<!------------------------------------------------------------блок8 (Популярные десерты)-------------------------------------->
+
+<section class="container-main8">
+    <div class="deserts">
+        <div class="deserts_header">
             <h2>Популярные Десерты</h2>
-            <div class="product_card fl"> 
-                <img src="./image/desert/shoko_des_s_ovs.png" alt="Фото Шоколадного десерта с овсянкой"></img>
-                <h3>Шоколадный десерт с офсянкой</h3>
-                <span>Нежнейший шоколадный десерт ....</span>
-                <br>
-                <div class="of">
-                    <p class="fl">70грн.</p>
-                    <div class="round_btn3 fr">
-                        <a href="./pages/basket.html">
-                        <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="product_card fl">
-                <img src="./image/desert/blinchiki_c_malinoy.png" alt="Фото Блинчиков с малиной"></img>
-                <h3>Блинчики с малиной</h3>
-                <span>Свежайшие блинчики с малиной ....</span>
-                <br>
-                <div class="of">
-                    <p class="fl">50грн.</p>
-                    <div class="round_btn3 fr">
-                        <a href="./pages/basket.html">
-                        <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="product_card fl">
-                <img src="./image/desert/Yagodno_plombirniy.png" alt="Фото Ягодного пломбира"></img>
-                <h3>Ягодный пломбир</h3>
-                <span>Нежный ягодный пломбир ....</span>
-                <br>
-                <div class="of">
-                    <p class="fl">65грн.</p>
-                    <div class="round_btn3 fr">
-                        <a href="./pages/basket.html">
-                        <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="product_card fl">
-                <img src="./image/desert/Puding.png" alt="Фото Пудинга"></img>
-                <h3>Пудинг</h3>
-                <span>Нежнейший пудинг ....</span>
-                <br>
-                <div class="of">
-                    <p class="fl">80грн.</p>
-                    <div class="round_btn3 fr">
-                        <a href="./pages/basket.html">
-                        <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="product_card fl">
-                <img src="./image/desert/icecream.png" alt="Фото Фруктового пломбира"></img>
-                <h3>Пломбир Фруктовый</h3>
-                <span>Свежайшие Фруктовый пломбир ....</span>
-                <br>
-                <div class="of">
-                    <p class="fl">50грн.</p>
-                    <div class="round_btn3 fr">
-                        <a href="./pages/basket.html">
-                        <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="product_card fl">
-                <img src="./image/desert/Shokoladniy_desert.png" alt="Фото шоколадного десерта"></img>
-                <h3>Шоколодный десерт</h3>
-                <span>Нежный шоколадный десерт ....</span>
-                <br>
-                <div class="of">
-                    <p class="fl">90грн.</p>
-                    <div class="round_btn3 fr">
-                        <a href="./pages/basket.html">
-                        <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
-                        </a>
-                    </div>
+        </div>
+        <div class="product_card fl"> 
+            <img src="./image/desert/shoko_des_s_ovs.png" alt="Фото Шоколадного десерта с овсянкой"></img>
+            <h3>Шоколадный десерт с офсянкой</h3>
+            <span>Нежнейший шоколадный десерт ....</span>
+            <div class="overflow">
+                <p class="fl">70грн.</p>
+                <div class="round_btn3 fr">
+                    <a href="./pages/basket.html">
+                    <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container-main">
-        <div class="mention of">
+        <div class="product_card fl">
+            <img src="./image/desert/blinchiki_c_malinoy.png" alt="Фото Блинчиков с малиной"></img>
+            <h3>Блинчики с малиной</h3>
+            <span>Свежайшие блинчики с малиной ....</span>
+            <div class="overflow">
+                <p class="fl">50грн.</p>
+                <div class="round_btn3 fr">
+                    <a href="./pages/basket.html">
+                    <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product_card fl">
+            <img src="./image/desert/Yagodno_plombirniy.png" alt="Фото Ягодного пломбира"></img>
+            <h3>Ягодный пломбир</h3>
+            <span>Нежный ягодный пломбир ....</span>
+            <div class="overflow">
+                <p class="fl">65грн.</p>
+                <div class="round_btn3 fr">
+                    <a href="./pages/basket.html">
+                    <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product_card fl">
+            <img src="./image/desert/Puding.png" alt="Фото Пудинга"></img>
+            <h3>Пудинг</h3>
+            <span>Нежнейший пудинг ....</span>
+            <div class="overflow">
+                <p class="fl">80грн.</p>
+                <div class="round_btn3 fr">
+                    <a href="./pages/basket.html">
+                    <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product_card fl">
+            <img src="./image/desert/icecream.png" alt="Фото Фруктового пломбира"></img>
+            <h3>Пломбир Фруктовый</h3>
+            <span>Свежайшие Фруктовый пломбир ....</span>
+            <div class="overflow">
+                <p class="fl">50грн.</p>
+                <div class="round_btn3 fr">
+                    <a href="./pages/basket.html">
+                    <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product_card fl">
+            <img src="./image/desert/Shokoladniy_desert.png" alt="Фото шоколадного десерта"></img>
+            <h3>Шоколодный десерт</h3>
+            <span>Нежный шоколадный десерт ....</span>
+            <div class="overflow">
+                <p class="fl">90грн.</p>
+                <div class="round_btn3 fr">
+                    <a href="./pages/basket.html">
+                    <img src="./image/logo/Button/SMALL(2).png" alt=" в корзину">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------------------------------------------блок9 (Отзывы)-------------------------------------->
+<section class="container-main9">
+    <div class="mention oferflow">
+        <div class="mention_header">
             <h2>Отзывы</h2>
-            <div class="fl ">
+        </div>
+        <div class="mention_card overflow" >
+            <div class="fl">
                 <div class="user">
                     <img class="fl" src="./image/username/DennisFerguson1.png">
                     <img class="fr" src="./image/username/date2.png">
@@ -273,6 +367,7 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam pariatur quo doloribus ea possimus vero recusandae quasi amet, culpa dolorem beatae obcaecati porro quibusdam veritatis ullam. Quia, blanditiis optio.
                 </p>
+                <div class="vl"></div>
             </div>
                 <div class="fl">
                     <div class="user">
@@ -288,6 +383,7 @@
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam pariatur quo doloribus ea possimus vero recusandae quasi amet, culpa dolorem beatae obcaecati porro quibusdam veritatis ullam. Quia, blanditiis optio.
                     </p>
+                    <div class="vl"></div>
                 </div>
                 <div class="fl">
                     <div class="user">
@@ -303,87 +399,100 @@
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam pariatur quo doloribus ea possimus vero recusandae quasi amet, culpa dolorem beatae obcaecati porro quibusdam veritatis ullam. Quia, blanditiis optio.
                     </p>
+                    <div class="vl"></div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container-main10 of">
-        <div class="contacts ">
+        
+    </div>
+</section>
+
+<!------------------------------------------------------------блок10 (Контакты)-------------------------------------->
+<section class="container-main10 oferflow">
+    <div class="contacts ">
+        <div class="contacts_header">
             <h2>Контакты</h2>
-            <div class="left_parts2">
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:Hellomymail.com">mailto:Hellomymail.com</a>
-                </p>
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tell:+380632254896">tell:+380632254896</a>
-                </p>
-                <p>
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <a href="tg://resolve?domain=имя_пользователя">Telegram</a>
-                </p>
-            </div>
-            <div class="right_contacts">
-                <div class="round_btn4 ">
-                    <a href="#">
-                    <img src="./image/logo/Button/name.png" alt="Ваше имя">
-                    </a>
-                </div>
-                <div class="round_btn5">
-                    <a href="#">
-                    <img src="./image/logo/Button/phone.png" alt="номер телефона">
-                    </a>
-                </div>
-                <div class="round_btn6">
-                    <a href="#">
-                    <img src="./image/logo/Button/messege.png" alt="Сообщение">
-                    </a>
-                </div>
-                <div class="round_btn7">
-                    <a href="#">
-                    <img src="./image/logo/Button/order.png" alt="заказать">
-                    </a>
-                </div>
-            </div>
         </div>
-    </section>
-    <footer class="container-main_last">
-        <div class="fot_nav">
-            <div class="fl">
+        <div class="left_parts2">
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:Hellomymail.com">mailto:Hellomymail.com</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tell:+380632254896">tell:+380632254896</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-location-arrow"></i>
+                <a href="tg://resolve?domain=имя_пользователя">Telegram</a>
+            </p>
+        </div>
+        <div class="right_contacts">
+            <div class="round_btn4 ">
                 <a href="#">
-                <img src="./image/logo/Logo.png" alt="Logo"></a>
+                <img src="./image/logo/Button/phone.png" alt="номер телефона">
+                </a>
             </div>
-            <h2>Територия вкуса</h2>
-            <nav class="clearfix of">
-                <ul class=" navigation-wrap2 fl">
-                    <li><a href="/Pages/about.html" target="_blank">О нас</a></li>
-                    <li><a href="/Pages/menu.html" target="_blank">Меню</a></li>
-                    <li><a href="/Pages/delivery.html" target="_blank">Доставка</a></li>
-                    <li><a href="/Pages/Payment.html" target="_blank">Оплата</a></li>
-                    <li><a href="/Pages/Franchise.html" target="_blank">Франшиза</a></li>
-                    <li><a href="/Pages/Jobs.html" target="_blank">Вакансии</a></li>
-                </ul>
-            </nav>
-            <hr class="clearfix of">
-            <ul class="social_wrap fl">
-                <li class="social_networks fl">
-                    <i class="fa-brands fa-instagram fl"></i>
-                    <a href="http.instagram.com" target="_blank"></a>
-                </li>
-                <li class="social_networks fl">
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="http.facebook.com" target="_blank"></a>
-                </li>
-                <li class="social_networks fl">
-                    <i class="fa-brands fa-twitter"></i>
-                    <a href="http.twitter.com" target="_blank"></a>
-                </li>
-                <li class="social_networks fl">
-                    <i class="fa-brands fa-viber"></i>
-                    <a href="http.viber.com" target="_blank"></a>
-                </li>
-            </ul>
+            <div class="round_btn5">
+                <a href="#">
+                <img src="./image/logo/Button/name.png" alt="Ваше имя">
+                </a>
+            </div>
+            <div class="round_btn6">
+                <a href="#">
+                <img src="./image/logo/Button/messege.png" alt="Сообщение">
+                </a>
+            </div>
+            <div class="round_btn7">
+                <a href="#">
+                <img src="./image/logo/Button/order.png" alt="заказать">
+                </a>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!------------------------------------------------------------блок11 (Footer)-------------------------------------->
+<footer class="container-main11">
+    <div class="fot_nav">
+        <div class="footer-logo fl">
+            <a href="#">
+            <img src="./image/logo/Logo.png" alt="Logo"><span>Територия вкуса</span></a>
+        </div>
+        
+        <nav class="clearfix overflow">
+            <ul class=" navigation-wrap2 fl">
+                <li><a href="/pages/about.html" target="_blank">О нас</a></li>
+                <li><a href="/pages/menu.html" target="_blank">Меню</a></li>
+                <li><a href="/pages/delivery.html" target="_blank">Доставка</a></li>
+                <li><a href="/pages/Payment.html" target="_blank">Оплата</a></li>
+                <li><a href="/pages/Franchise.html" target="_blank">Франшиза</a></li>
+                <li><a href="/pages/Jobs.html" target="_blank">Вакансии</a></li>
+            </ul>
+        </nav>
+        <hr class="clearfix overflow">
+        <div class="link_wrap overflow">
+            <ul class="social_wrap fl">
+            <li class="social_networks fl">
+                <i class="fa-brands fa-instagram fl"></i>
+                <a href="https://www.instagram.com/" target="_blank"></a>
+            </li>
+            <li class="social_networks fl">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.facebook.com/" target="_blank"></a>
+            </li>
+            <li class="social_networks fl">
+                <i class="fa-brands fa-twitter"></i>
+                <a href="https://twitter.com/?lang=ru" target="_blank"></a>
+            </li>
+            <li class="social_networks fl">
+                <i class="fa-brands fa-viber"></i>
+                <a href="https://www.viber.com/ru/" target="_blank"></a>
+            </li>
+        </ul>
+    </div>
+        
+    </div>
+</footer>
 </main>
+</html>
