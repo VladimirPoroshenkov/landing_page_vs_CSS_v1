@@ -143,7 +143,7 @@ body {
 /*Размер блока*/
 .container-main2 {
     margin: 0 auto;
-    padding: 45px 0px 75px;/* отступ контента от 1го блока сверху и от 3го блока снизу как по макету*/
+    padding: 55px 0px 75px;/* отступ контента от 1го блока сверху и от 3го блока снизу как по макету*/
     box-sizing: border-box;
     overflow: auto;
     text-align: center;
